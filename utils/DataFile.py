@@ -17,7 +17,7 @@ def addNewMember(df, first, last, email, gradDate, big, little, inProgram, seeki
     return df
     
 def searchFirstName(df, first) :
-    return df.query('First == @first')
+    return df.query('First == @first').to_dict(orient='list')
 
 def searchLastName(df, last) :
     return df.query('Last == @last')
@@ -51,10 +51,3 @@ def searchNotSeekingBig (df) :
 
 def searchMentorLead (df, mentorLead) :
     return df.query('Seeking_Little == @mentorLead')
-
-if __name__=='__main__' :
-    df = loadIn()
-    df = addNewMember(df, 'Westin','Musser','wstnmssr@gmail.com','S20','','',True,False,False,'','')
-    print(searchFirstName(df, 'Sarah'))
-    loadOut(df)
-    
