@@ -81,9 +81,4 @@ def _gradByThisYear (current, grad) :
         return 0
     return -1    
     
-    
-    
-if __name__=='__main__' :
-    df = loadIn()
-    df = addNewMember(df, 'Aislin', 'Jeske', 'aislin.jeske@gmail.com', 'F19', '','Ariana Mims',False,False,False,'','')
-    print (searchCurrent(df, 'S20'))
+
