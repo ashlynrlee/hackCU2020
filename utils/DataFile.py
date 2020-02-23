@@ -1,6 +1,6 @@
 import pandas as pd
 
-data_filepath = '../data.csv'
+data_filepath = './data.csv'
 
 def loadIn() :
     global data_filepath

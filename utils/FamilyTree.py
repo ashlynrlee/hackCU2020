@@ -1,5 +1,5 @@
 import pandas as pd
-from DataFile import *
+from utils.DataFile import *
 
 def searchTree(df, memberData) :
     toSearch = [memberData]
